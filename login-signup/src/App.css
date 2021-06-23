@@ -1,0 +1,211 @@
+/*Login page styling*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+
+}
+
+html {
+  overflow: hidden;
+}
+
+.loginConatiner img {
+  padding-right: 300px;
+  padding-left: 80px;
+}
+
+.loginbutton {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background: #603bbb;
+  cursor: pointer;
+}
+
+.login {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  padding: 0 20px;
+  background-image: url('./assets/loginbg.png');
+  background-repeat: fill;
+  background-blend-mode: overlay;
+  display: flex;
+  border-radius: 0px;
+}
+
+.login .loginContainer {
+
+
+  background: #ECEDFA;
+
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 30px;
+  padding-top: 0px;
+  margin: auto;
+  width: 100%;
+  width: 450px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  /*background: radial-gradient(ellipse at left bottom,
+      rgba(22, 24, 47, 1) 0%,
+      rgba(38, 20, 72, 0.9) 59%,
+      rgba(17, 27, 75, 0.9) 100%);*/
+  box-shadow: -14px 16px 27px rgba(0, 0, 0, 0.25), inset 5px -6px 10px rgba(0, 0, 0, 0.25), inset -5px 5px 8px #DEE0F9;
+}
+
+.login .loginContainer label {
+  color: rgba(22, 24, 47, 1) 0%;
+  font-weight: bold;
+  margin: 14px 0;
+  display: block;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.login .loginContainer input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 15px;
+  background: linear-gradient(87.67deg, #828BF8 0%, #ABB1F4 0.01%, #7379FF 100%);
+  box-shadow: -14px 16px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 21px;
+  letter-spacing: 1px;
+}
+
+.login .loginContainer .btnContainer {
+  width: 100%;
+  padding: 24px 0;
+}
+
+.login .loginContainer .btnContainer p {
+  margin: 14px 0 0 0;
+  text-align: right;
+  color: rgba(22, 24, 47, 1) 0%;
+}
+
+.login .loginContainer .btnContainer p span {
+  color: rgba(22, 24, 47, 1) 0%;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+.login .loginContainer .btnContainer p span:hover {
+  color: red;
+}
+
+.login .loginContainer .errorMsg {
+  color: red;
+  font-size: 16px;
+}
+
+/*hero page i.e main page after login- landing page*/
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  border-radius: 0px;
+  background: radial-gradient(ellipse at left bottom,
+      rgba(22, 24, 47, 1) 0%,
+      rgba(40, 14, 88, 0.9) 59%,
+      rgba(31, 11, 70, 0.9) 100%);
+}
+
+.hero nav {
+  background: linear-gradient(87.67deg, #585DD8 0%, #8558d8 0.01%, #4a208d 100%);
+  box-shadow: -14px 16px 27px rgba(0, 0, 0, 0.25);
+  border-radius: 21px;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero nav h2 {
+  color: #fff;
+}
+
+.hero nav .loginbutton {
+  width: 86px;
+  padding: 8px 0;
+  background: #8659df;
+  border-radius: 30px;
+
+}
+
+.hero,
+.hero::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*VideoChat style*/
+.VCcontainer {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+}
+
+.myId {
+  margin-right: 5rem;
+  border-radius: 5px;
+  background: #c9d6ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e2e2e2, #c9d6ff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #e2e2e2,
+      #c9d6ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 2rem;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.call-button {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.video-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  margin-top: 10rem;
+  margin-left: 10rem;
+}
+
+.caller {
+  text-align: center;
+  color: #fff;
+}
+
+/*body {
+
+	background: -webkit-linear-gradient(to right, #8e54e9, #4776e6);
+	background: linear-gradient(
+		to right,
+		#8e54e9,
+		#4776e6
+	); 
+}*/
