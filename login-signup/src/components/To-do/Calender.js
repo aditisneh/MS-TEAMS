@@ -1,5 +1,5 @@
 import Motion from "../Motion";
-import chart from '../../assets/schedule-chart.png'
+import chart from '../../assets/time.png'
 import './to-do.css'
 
 const CalenderComponent = () => {
