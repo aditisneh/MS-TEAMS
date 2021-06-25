@@ -1,5 +1,8 @@
 import React, { Fragment } from 'react';
 import spinner from './spin1.gif';
+import img from './img.png'
+import hi from '../assets/hiVideo.gif'
+
 const Spinner = (props) => {
   return (
     <div className='spinner'>
@@ -18,6 +21,7 @@ const Spinner = (props) => {
         alt='Loading...'
       ></img>
       <h2 style={{ textAlign: 'center' }}>
+      <img src={hi}></img>
         {props.starting ? 'Starting your meeting...' : 'Loading your video...'}
       </h2>
     </div>

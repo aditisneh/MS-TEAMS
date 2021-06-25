@@ -5,7 +5,7 @@ import './Home.css';
 //import homeIcon from '../../assets/video-call.png';
 import homeIcon1 from '../../assets/vc.svg';
 import noteIcon from '../../assets/call.svg';
-import imgVc from '../../assets/img.png';
+import imgVc from '../../assets/join.png';
 import ChatIcon from '@material-ui/icons/Chat';
 import EventNoteIcon from '@material-ui/icons/EventNote';
 import SurroundSoundIcon from '@material-ui/icons/SurroundSound';

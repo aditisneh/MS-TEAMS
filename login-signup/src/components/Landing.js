@@ -11,6 +11,7 @@ import Home from '../components/Home/Home'
 import Join from '../components/Join/Join'
 import Meet from '../components/Meet/Meet'
 
+
 const Pages = styled.div`
   width: 100vw;
   height: 100vh;
@@ -35,9 +36,11 @@ const Landing=({ handleLogout })=>{
             </nav>
             <BrowserRouter>
             <Sidebar/>
+     
             <Pages>
             <AnimatePresence exitBeforeEnter>
                 <Switch>
+                    
                     <Route exact path='/' component={Home}/>
                     <Route path='/join' component={Join}></Route>
                     <Route path='/meet' component={Meet}></Route>
