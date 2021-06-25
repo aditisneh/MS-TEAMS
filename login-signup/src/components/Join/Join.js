@@ -24,7 +24,7 @@ const Join = (props) => {
 
   useEffect(() => {
     if (!newMeet && meetingCode.length === 0) {
-      props.history.push('/');
+      props.history.push('/landing');
       window.location.reload();
       return;
     }
@@ -104,7 +104,7 @@ const Join = (props) => {
                   className='btn'
                   onClick={() => {
                     setMeetingCode('');
-                    props.history.push('/');
+                    props.history.push('/landing');
                     window.location.reload();
                   }}
                 >

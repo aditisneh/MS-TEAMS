@@ -4,8 +4,8 @@ import './Home.css';
 //import Footer from '../Footer/Footer';
 //import homeIcon from '../../assets/video-call.png';
 import homeIcon1 from '../../assets/vc.svg';
-import noteIcon from '../../assets/other.svg';
-import homeVideo from '../../assets/homeVideo1.mp4';
+import noteIcon from '../../assets/call.svg';
+import imgVc from '../../assets/img.png';
 import ChatIcon from '@material-ui/icons/Chat';
 import EventNoteIcon from '@material-ui/icons/EventNote';
 import SurroundSoundIcon from '@material-ui/icons/SurroundSound';
@@ -69,7 +69,7 @@ const Home = (props) => {
                 </button>
               </div>
               <div className='features'>
-                <h1>Features</h1>
+                <h2>Features</h2>
                 <div className='grid-div'>
                   <DuoIcon />
                   <p>1:1 Video chat</p>
@@ -93,14 +93,9 @@ const Home = (props) => {
           </div>
           <div className='right-div'>
             {/* <img src={homeIcon} alt='' /> */}
-            <video
-              src={homeVideo}
-              id='video'
-              alt='video'
-              autoPlay
-              muted
-              loop
-            ></video>
+            <img className="img-vc"
+              src={imgVc}
+            ></img>
           </div>
         </div>
       </div>

@@ -120,14 +120,11 @@ html {
   width: 100%;
   min-height: 100vh;
   border-radius: 0px;
-  background: radial-gradient(ellipse at left bottom,
-      rgba(22, 24, 47, 1) 0%,
-      rgba(40, 14, 88, 0.9) 59%,
-      rgba(31, 11, 70, 0.9) 100%);
+  background-image: url('assets/Mainbg.png');
 }
 
 .hero nav {
-  background: linear-gradient(87.67deg, #585DD8 0%, #8558d8 0.01%, #4a208d 100%);
+  background: linear-gradient(87.67deg, #585DD8 0%, #4a268d 0.01%, #464EB8, 100% 100%);
   box-shadow: -14px 16px 27px rgba(0, 0, 0, 0.25);
   border-radius: 21px;
   width: 100%;
@@ -144,8 +141,9 @@ html {
 .hero nav .loginbutton {
   width: 86px;
   padding: 8px 0;
-  background: #8659df;
-  border-radius: 30px;
+  background: #656dda;
+  box-shadow: -14px 16px 27px rgba(0, 0, 0, 0.25), inset 5px -6px 10px rgba(0, 0, 0, 0.25), inset -5px 5px 8px #7C81FA;
+  border-radius: 20px;
 
 }
 
@@ -160,19 +158,20 @@ html {
 /*VideoChat style*/
 .VCcontainer {
   display: grid;
-  grid-template-columns: 7fr 3fr;
+  grid-template-columns: 7fr 3fr ;
 }
 
 .myId {
   margin-right: 5rem;
   border-radius: 5px;
-  background: #c9d6ff;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #e2e2e2, #c9d6ff);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right,
-      #e2e2e2,
-      #c9d6ff);
+  background: linear-gradient(122.06deg, rgba(222, 224, 248, 0.48) 14.47%, rgba(183, 189, 255, 0.562) 70.59%);
+  box-shadow: 0px 4px 24px -1px rgba(207, 210, 250, 0.363);
+  backdrop-filter: blur(20px);
+
+border-radius: 30px;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   padding: 2rem;
@@ -182,6 +181,7 @@ html {
 }
 
 .call-button {
+  
   text-align: center;
   margin-top: 2rem;
 }
@@ -194,18 +194,24 @@ html {
   margin-top: 10rem;
   margin-left: 10rem;
 }
-
+.video-box{
+  border-radius: 10px;
+}
 .caller {
   text-align: center;
   color: #fff;
+  position: relative;
 }
+/*.option-bar{
+  width: 500px;
+height: 50px;
+display: grid;
+  grid-template-columns: 1fr 1fr;
+background: linear-gradient(122.06deg, #DEE0F8 14.47%, rgba(216, 219, 255, 0.63) 70.59%);
+box-shadow: 0px 4px 24px -1px rgba(207, 210, 250, 0.12);
+backdrop-filter: blur(20px);
+ Note: backdrop-filter has minimal browser support 
 
-/*body {
-
-	background: -webkit-linear-gradient(to right, #8e54e9, #4776e6);
-	background: linear-gradient(
-		to right,
-		#8e54e9,
-		#4776e6
-	); 
+border-radius: 30px;
 }*/
+

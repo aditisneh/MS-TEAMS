@@ -6,7 +6,6 @@ import MicIcon from '@material-ui/icons/Mic';
 import MicOffIcon from '@material-ui/icons/MicOff';
 import './Meet.css';
 import homeIcon1 from '../../assets/other.svg';
-import noteIcon from '../../assets/vc.svg';
 import Spinner from '../../common/Spinner';
 import saveAs from 'file-saver';
 import { pdfExporter } from 'quill-to-pdf';
@@ -85,7 +84,7 @@ const Meet = (props) => {
     const delta = quill.getContents();
     const pdfAsBlob = await pdfExporter.generatePdf(delta);
     message.success('Downloading your whiteboard');
-    saveAs(pdfAsBlob, `Merge-whiteboard.pdf`);
+    saveAs(pdfAsBlob, `MS-Teams-editor.pdf`);
   };
 
   if (loading) {
@@ -94,7 +93,6 @@ const Meet = (props) => {
         style={{
           height: '100vh',
           overflow: 'hidden',
-          backgroundColor: 'white',
         }}
       >
         <Spinner starting />
@@ -168,7 +166,6 @@ const Meet = (props) => {
           <div className='editor-div'>
             <div className='head'>
               <div className='head-title'>
-                <img src={noteIcon} alt='' />
                 <h3>Whiteboard</h3>
               </div>
               <button

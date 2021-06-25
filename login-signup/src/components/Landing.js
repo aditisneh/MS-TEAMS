@@ -4,7 +4,7 @@ import {Switch, Route, BrowserRouter} from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Videochat from './Videochat';
 import Chat from './Chat';
-import Calender from './Calender';
+import Calender from './To-do/Calender';
 import Other from './Other';
 import { AnimatePresence } from "framer-motion";
 import Home from '../components/Home/Home'
@@ -38,10 +38,10 @@ const Landing=({ handleLogout })=>{
             <Pages>
             <AnimatePresence exitBeforeEnter>
                 <Switch>
-                   {/* <Route exact path='/' component={Home}/>
+                    <Route exact path='/' component={Home}/>
                     <Route path='/join' component={Join}></Route>
-                    <Route path='/meet' component={Meet}></Route>*/}
-                    <Route path='/' component={Videochat}></Route>
+                    <Route path='/meet' component={Meet}></Route>
+                    {/*<Route exact path='/' component={Videochat}></Route>*/}
                     <Route exact path='/chat' component={Chat}/>
                     <Route exact path='/calender' component={Calender}/>
                     <Route exact path='/other' component={Other}/>

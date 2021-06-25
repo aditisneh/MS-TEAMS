@@ -1,6 +1,6 @@
 .home {
   position: relative;
-  background-color: white;
+
 }
 
 .body-div {
@@ -10,7 +10,7 @@
 }
 
 .home .body-div {
-  overflow: hidden;
+ 
   height: 87vh;
 }
 
@@ -22,7 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40%;
+  width: 60%;
   align-items: center;
 }
 
@@ -34,22 +34,23 @@
 }
 
 .home .body-div .flex-box .left-div .contents .chat-img {
-  width: 120%;
-  height: 140%;
+  width: 60%;
+  height: 70%;
   opacity: 0.15;
-  top: 20%;
-  right: 55%;
+  top: 0%;
+  left: 200%;
   position: absolute;
+  transform: rotate(-180deg);
 }
 
 .home .body-div .flex-box .left-div .contents .note-img {
   width: 60%;
-  height: 70%;
+  height: 60%;
   opacity: 0.15;
-  top: 80%;
-  left: 115%;
+  top: 60%;
+  left: 200%;
   position: absolute;
-  transform: rotate(-30deg);
+  transform: rotate(-90deg);
 }
 
 .home .body-div .flex-box .left-div input {
@@ -64,7 +65,7 @@
 }
 
 .home .body-div .flex-box .left-div input:focus {
-  border-color: #2cbdc7;
+  border-color: #320e85;
 }
 
 .home .body-div .flex-box .left-div .home-btn {
@@ -74,8 +75,10 @@
   border: none;
   cursor: pointer;
   font-size: 17px;
-  border: 2px solid #16c071;
-  background-color: #0d4b85;
+  
+  background: #5158B6;
+  box-shadow: -14px 16px 27px rgba(0, 0, 0, 0.25), inset 5px -6px 10px rgba(0, 0, 0, 0.25), inset -5px 5px 8px #464EB8;
+  border-radius: 15px;
   color: white;
   transition-duration: 0.4s;
   z-index: 1;
@@ -83,8 +86,9 @@
 }
 
 .home .body-div .flex-box .left-div .home-btn:hover {
-  background-color: #1b8299;
-  color: white;
+  background-color: #8e87eb;
+  box-shadow: -14px 16px 27px rgba(0, 0, 0, 0.25), inset 5px -6px 10px rgba(0, 0, 0, 0.25), inset -5px 5px 8px #8e87eb;
+  color:white;
 }
 
 .home .body-div .flex-box .left-div .start-meet {
@@ -149,21 +153,6 @@
     width: 100%;
   }
 
-  .home .body-div .flex-box .left-div .contents {
-    width: 100%;
-    margin-left: 10%;
-    top: 25%;
-  }
-
-  .home .body-div .flex-box .left-div .contents .note-img {
-    width: 50%;
-    height: 50%;
-    opacity: 0.15;
-    top: 40%;
-    left: 65%;
-    position: absolute;
-    transform: rotate(-30deg);
-  }
 
   .home .body-div .flex-box .left-div .contents .chat-img {
     width: 90%;
@@ -172,31 +161,6 @@
     top: 60%;
     right: 55%;
     position: absolute;
-  }
-
-  .home .body-div .flex-box .left-div input {
-    padding: 0.5rem;
-    border: 2px solid #d1d1d1;
-    outline: none;
-    border-radius: 10px;
-    width: 55%;
-    font-size: 18px;
-    transition-duration: 0.4s;
-  }
-
-  .home .body-div .flex-box .left-div input:focus {
-    border-color: #2cbdc7;
-  }
-
-  .home .body-div .flex-box .left-div .home-btn {
-    position: relative;
-    padding: 0.5rem;
-    z-index: 1;
-  }
-
-  .home .body-div .flex-box .left-div .home-btn:hover {
-    background-color: #1b8299;
-    color: white;
   }
 
   .home .body-div .flex-box .left-div .start-meet {
@@ -222,12 +186,8 @@
     margin-left: 10%;
   }
 
-  .home .body-div .flex-box .right-div {
-    width: 100%;
-  }
 
-  .home .body-div .flex-box .right-div video {
-    z-index: -1;
-    width: 100%;
-  }
+}
+.img-vc{
+  padding-right: 0%;
 }

@@ -19,7 +19,7 @@ import Messages from '../Messages/Messages';
 import Notes from '../Notes/Notes';
 import CloseIcon from '@material-ui/icons/Close';
 import AntSwitch from '../../common/AntSwitch';
-import { BACKEND_URL } from '../../constants';
+import { APP_URL } from '../../constants';
 
 const Options = (props) => {
   const [callId, setCallId] = useState('');
@@ -48,6 +48,7 @@ const Options = (props) => {
     showChatBox,
     setShowChatBox,
     setShowEditor,
+    setMeetingCode,
     notesOpen,
     setNotesOpen,
   } = useContext(SocketContext);
@@ -84,7 +85,7 @@ const Options = (props) => {
       <div className={showEditor ? 'options' : 'options w100'}>
         <button className='tooltip' onClick={handleClick}>
           <MoreVertIcon />
-          <span className='tooltiptext'>Options</span>
+          <span className='tooltiptext'></span>
         </button>
 
         <button
@@ -92,20 +93,19 @@ const Options = (props) => {
           className={!myVideoStatus ? 'bg-grey tooltip' : 'bg-white tooltip'}
         >
           {myVideoStatus ? <VideocamIcon /> : <VideocamOffIcon />}
-          <span className='tooltiptext'>
-            {myVideoStatus ? 'Turn off video' : 'Turn on video'}
-          </span>
         </button>
         {/* {callAccepted && !callEnded && ( */}
         <button
           className='red-btn tooltip'
           type='primary'
           onClick={() => {
-            endCall(props.history);
+            setMeetingCode('');
+            props.history.push('/landing');
+            window.location.reload();
           }}
         >
           <CallEndIcon />
-          <span className='tooltiptext'>End call</span>
+          <span className='tooltiptext'></span>
         </button>
 
         {/* )} */}
@@ -116,9 +116,6 @@ const Options = (props) => {
         >
           {' '}
           {myMicStatus ? <MicIcon /> : <MicOffIcon />}
-          <span className='tooltiptext'>
-            {myMicStatus ? 'Turn off mic' : 'Turn on mic'}
-          </span>
         </button>
         <button
           className='tooltip'
@@ -126,7 +123,7 @@ const Options = (props) => {
           onClick={() => setShowChatBox(!showChatBox)}
         >
           <ChatIcon />
-          <span className='tooltiptext'>Chat</span>
+          <span className='tooltiptext'></span>
         </button>
 
         <Notes />
@@ -140,7 +137,7 @@ const Options = (props) => {
         >
           <div className='options-menu'>
             <div className='btn-div'>
-              <h3>Options</h3>
+             
               <button type='primary' onClick={handleClose}>
                 <CloseIcon />
               </button>
@@ -150,12 +147,12 @@ const Options = (props) => {
               <input
                 type='text'
                 readOnly
-                value={`${BACKEND_URL}?${me}`}
+                value={`${APP_URL}?${me}`}
                 style={{ marginBottom: '1rem' }}
               />
               <br />
               <CopyToClipboard
-                text={`${BACKEND_URL}?${me}`}
+                text={`${APP_URL}?${me}`}
                 onCopy={() => {
                   message.success('Url Copied');
                 }}

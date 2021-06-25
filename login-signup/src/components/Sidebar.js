@@ -56,7 +56,8 @@ position:relative;
 }
 `;
 const SidebarContainer = styled.div`
-  background-color: #DEE0F9;
+background: #DEE0F8;
+box-shadow: -14px 16px 27px rgba(0, 0, 0, 0.25), inset 5px -6px 10px rgba(0, 0, 0, 0.25), inset -5px 5px 8px #DEE0F9;
   width: 6rem;
   height: 30vh;
   margin-top: 1rem;
@@ -78,7 +79,8 @@ const Logo = styled.div`
   }
 `;
 const Bar = styled.ul`
-  color: #4449B1;
+background: #DEE0F8;
+box-shadow: -14px 16px 27px rgba(0, 0, 0, 0.25), inset 5px -6px 10px rgba(0, 0, 0, 0.25), inset -5px 5px 8px #DEE0F9;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -135,7 +137,7 @@ const handleClick=()=>setClick(!click);
     <>
     <MainContainer>
      <Button clicked={click} onClick={() => handleClick()}>
-        @
+        X
       </Button>
     <SidebarContainer>
         <Logo>

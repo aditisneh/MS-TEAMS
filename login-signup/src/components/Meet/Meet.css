@@ -1,7 +1,6 @@
 .flex-div {
   display: flex;
   height: 100vh;
-  background-color: white;
 }
 
 .flex-div .left {
@@ -125,10 +124,6 @@
   display: flex;
   background-color: white;
   grid-column-gap: 5px;
-}
-
-.flex-div .right .editor-div .head .head-title img {
-  width: 30px;
 }
 
 .flex-div .right .editor-div .head .head-title h3 {
