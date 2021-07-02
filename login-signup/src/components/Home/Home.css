@@ -1,9 +1,13 @@
 .home {
   position: relative;
 
-}
 
+}
+.nav-bottom{
+  padding-bottom: 150px;
+}
 .body-div {
+  
   padding-left: 10px;
   width: 1000px;
   height: 500px;

@@ -136,6 +136,7 @@ const handleClick=()=>setClick(!click);
     return(
     <>
     <MainContainer>
+      <div className='nav-bottom'></div>
      <Button clicked={click} onClick={() => handleClick()}>
         X
       </Button>

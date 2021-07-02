@@ -35,8 +35,7 @@ html {
   min-height: 100vh;
   padding: 0 20px;
   background-image: url('./assets/loginbg.png');
-  background-repeat: fill;
-  background-blend-mode: overlay;
+  background-repeat:no-repeat;
   display: flex;
   border-radius: 0px;
 }
@@ -121,6 +120,7 @@ html {
   min-height: 100vh;
   border-radius: 0px;
   background-image: url('assets/Mainbg.png');
+  background-repeat: no-repeat;
 }
 
 .hero nav {
@@ -129,13 +129,18 @@ html {
   border-radius: 21px;
   width: 100%;
   padding: 20px 40px;
+  padding-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position:fixed;
 }
 
 .hero nav h2 {
   color: #fff;
+}
+.nav-bottom{
+  padding-bottom: 150px;
 }
 
 .hero nav .loginbutton {

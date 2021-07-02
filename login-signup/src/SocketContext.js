@@ -42,7 +42,7 @@ const ContextProvider = ({ children }) => {
     socket.on('me', (id) => {
       setMe(id);
     });
-    socket.on('calluser', ({ from, name: callerName, signal }) => {
+    socket.on('callUser', ({ from, name: callerName, signal }) => {
       setCall({
         from,
         callerName,
@@ -57,12 +57,12 @@ const ContextProvider = ({ children }) => {
         return;
       }
       if (type === 'video') {
-        message.info(`User turned ${mediaStatus[0] ? 'on' : 'off'} his video`);
+        message.info(`User turned ${mediaStatus[0] ? 'on' : 'off'} their video`);
         setUserVideoStatus(mediaStatus[0]);
         return;
       }
       if (type === 'audio') {
-        message.info(`User ${mediaStatus[0] ? 'unmuted' : 'muted'} his mic`);
+        message.info(`User ${mediaStatus[0] ? 'unmuted' : 'muted'} their mic`);
         setUserMicStatus(mediaStatus[0]);
         return;
       }
@@ -84,7 +84,7 @@ const ContextProvider = ({ children }) => {
     const peer = new Peer({ initiator: false, trickle: false, stream });
 
     peer.on('signal', (data) => {
-      socket.emit('answercall', {
+      socket.emit('answerCall', {
         name,
         signal: data,
         to: call.from,
@@ -110,7 +110,7 @@ const ContextProvider = ({ children }) => {
     setOtherUser(id);
 
     peer.on('signal', (data) => {
-      socket.emit('calluser', {
+      socket.emit('callUser', {
         userToCall: id,
         from: me,
         signal: data,

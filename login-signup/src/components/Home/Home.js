@@ -29,12 +29,16 @@ const Home = (props) => {
   }, []);
 
   return (
+    <>
+    
     <div className='home'>
    
       <div className='body-div'>
+      <div className='nav-bottom'></div>
         <div className='flex-box'>
           <div className='left-div'>
             <div className='contents'>
+            
               <div className='start-meet'>
                 <Link
                   className='home-btn'
@@ -101,6 +105,7 @@ const Home = (props) => {
       </div>
   
     </div>
+    </>
   );
 };
 

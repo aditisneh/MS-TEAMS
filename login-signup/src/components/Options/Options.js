@@ -31,17 +31,9 @@ const Options = (props) => {
     callEnded,
     name,
     setCall,
-    setName,
-    myVideo,
-    userVideo,
-    stream,
     answerCall,
-    callUser,
-    endCall,
     myVideoStatus,
     myMicStatus,
-    userVideoStatus,
-    userMicStatus,
     updateMicStatus,
     updateVideoStatus,
     showEditor,
@@ -49,8 +41,6 @@ const Options = (props) => {
     setShowChatBox,
     setShowEditor,
     setMeetingCode,
-    notesOpen,
-    setNotesOpen,
   } = useContext(SocketContext);
 
   const [open, setOpen] = useState(true);

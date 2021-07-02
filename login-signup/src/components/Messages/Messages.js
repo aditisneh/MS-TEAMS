@@ -104,6 +104,7 @@ const Messages = () => {
           />
           <Button
             type='primary'
+            className='send'
             onClick={() => {
               sendMessage();
             }}
