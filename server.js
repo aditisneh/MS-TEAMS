@@ -1,5 +1,6 @@
 const express = require("express")
 const http = require("http")
+const cors = require('cors')
 const app = express()
 const server = http.createServer(app)
 const io = require("socket.io")(server, {
@@ -8,6 +9,8 @@ const io = require("socket.io")(server, {
 		methods: [ "GET", "POST" ]
 	}
 })
+
+app.use(cors())
 
 io.on("connection", (socket) => {
 	socket.emit("me", socket.id)
