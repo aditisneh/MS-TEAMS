@@ -39,6 +39,8 @@ const Join = (props) => {
   }, []);
 
   useEffect(() => {
+    console.log('user accepted the call')
+    console.log(callAccepted)
     if (callAccepted) props.history.push('meet');
   }, [callAccepted]);
 

@@ -18,6 +18,7 @@ io.on("connection", (socket) => {
 	})
 
 	socket.on("callUser", (data) => {
+		console.log(data)
 		io.to(data.userToCall).emit("callUser", { signal: data.signalData, from: data.from, name: data.name })
 	})
 

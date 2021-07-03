@@ -84,6 +84,7 @@ const ContextProvider = ({ children }) => {
     const peer = new Peer({ initiator: false, trickle: false, stream });
 
     peer.on('signal', (data) => {
+      console.log('my signal=>>>',data)
       socket.emit('answerCall', {
         name,
         signal: data,
@@ -97,8 +98,10 @@ const ContextProvider = ({ children }) => {
     peer.on('stream', (currentStream) => {
       setOtherUserStream(currentStream);
     });
-
+    console.log('other user signal')
+    console.log(call.signal)
     peer.signal(call.signal);
+    
     connectionRef.current = peer;
   };
 
@@ -110,10 +113,11 @@ const ContextProvider = ({ children }) => {
     setOtherUser(id);
 
     peer.on('signal', (data) => {
+      console.log(data)
       socket.emit('callUser', {
         userToCall: id,
         from: me,
-        signal: data,
+        signalData: data,
         name,
       });
     });
@@ -121,7 +125,7 @@ const ContextProvider = ({ children }) => {
       setOtherUserStream(currentStream);
     });
 
-    socket.on('callaccepted', (signal, userName) => {
+    socket.on('callAccepted', (signal, userName) => {
       socket.emit('updateMyMedia', {
         data: {
           type: 'both',
@@ -131,6 +135,7 @@ const ContextProvider = ({ children }) => {
       });
       setOtherUserName(userName);
       setCallAccepted(true);
+      console.log('other user accepted the call -socket')
       peer.signal(signal);
       message.info(`${name} joined with you`);
     });
