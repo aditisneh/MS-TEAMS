@@ -22,11 +22,11 @@ io.on("connection", (socket) => {
 
 	socket.on("callUser", (data) => {
 		console.log(data)
-		io.to(data.userToCall).emit("callUser", { signal: data.signal, from: data.from, name: data.name })
+		io.to(data.userToCall).emit("callUser", { signal: data.signalData, from: data.from, name: data.name })
 	})
 
 	socket.on("answerCall", (data) => {
-		io.to(data.to).emit("callAccepted", data.signal)
+		io.to(data.to).emit("callAccepted", data.signalData)
 	})
 })
 

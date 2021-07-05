@@ -70,7 +70,7 @@ const ContextProvider = ({ children }) => {
       setUserVideoStatus(mediaStatus[1]);
     });
 
-    socket.on('callended', () => {
+    socket.on('callEnded', () => {
       setCall(null);
       message.info('User disconnected from call');
       setCallAccepted(false);
@@ -87,7 +87,7 @@ const ContextProvider = ({ children }) => {
       console.log('my signal=>>>',data)
       socket.emit('answerCall', {
         name,
-        signal: data,
+        signalData: data,
         to: call.from,
         type: 'both',
         mediaStatus: [myMicStatus, myVideoStatus],
@@ -144,7 +144,7 @@ const ContextProvider = ({ children }) => {
   };
 
   const endCall = (history) => {
-    socket.emit('callended', otherUser);
+    socket.emit('callEnded', otherUser);
     setCallEnded(true);
     setCallAccepted(false);
     if (connectionRef.current) connectionRef.current.destroy();

@@ -20,7 +20,7 @@ const HomePageText = (props) => {
       <button onClick={routeChange}className='getstarted'>
       Get Started
     </button>
-        <button>Github</button>
+        <button onClick={() => window.open( 'https://github.com/aditisneh/MS-TEAMS')}>Github</button>
       </BtnContainer>
     </Container>
   );
