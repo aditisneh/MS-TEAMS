@@ -52,7 +52,7 @@ html {
   margin: auto;
   width: 100%;
   width: 450px;
-  height: 480px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -160,7 +160,7 @@ html {
   box-sizing: border-box;
 }
 
-/*VideoChat style*/
+/*VideoChatjs style*/
 .VCcontainer {
   display: grid;
   grid-template-columns: 7fr 3fr ;

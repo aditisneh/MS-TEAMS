@@ -190,23 +190,6 @@ const Options = (props) => {
                 />
               </div>
             )}
-
-            {/* <div>
-              <input
-                type='text'
-                placeholder='Enter Id to call'
-                value={callId}
-                onChange={(e) => setCallId(e.target.value)}
-              />
-            </div> */}
-
-            {/* {!callAccepted && !callEnded && ( */}
-            {/* <div>
-              <Button type='primary' onClick={() => callUser(callId)}>
-                Join
-              </Button>
-            </div> */}
-            {/* )} */}
           </div>
         </Menu>
 
