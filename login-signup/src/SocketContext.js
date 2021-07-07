@@ -224,6 +224,7 @@ const ContextProvider = ({ children }) => {
         setOtherUserName,
         quill,
         setQuill,
+        setCall,
       }}
     >
       {children}
