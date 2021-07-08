@@ -1,4 +1,9 @@
 import firebase from 'firebase';
+import 'firebase/firestore';
+import "firebase/auth";
+import "firebase/functions";
+
+
 var firebaseConfig = {
     apiKey: "AIzaSyClZRjDpUJEdKGbKgEXsBlFQsubdI6Yrfs",
     authDomain: "login-be782.firebaseapp.com",
@@ -10,5 +15,9 @@ var firebaseConfig = {
   };
   // Initialize Firebase
  const fire = firebase.initializeApp(firebaseConfig);
+
+ export const auth = firebase.auth();
+export const firestore = firebase.firestore();
+export const functions = firebase.functions();
 
  export default fire;

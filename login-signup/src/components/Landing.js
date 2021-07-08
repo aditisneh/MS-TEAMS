@@ -4,7 +4,7 @@ import {Switch, Route, BrowserRouter} from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Videochat from './Videochat';
 import Chat from '../components/Chat/Chat';
-import Calender from './To-do/Calender';
+import Calender from '../components/To-do/Calender';
 import Other from './Other';
 import { AnimatePresence } from "framer-motion";
 import Home from '../components/Home/Home'

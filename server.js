@@ -25,6 +25,16 @@ io.on("connection", (socket) => {
 		io.to(data.userToCall).emit("callUser", { signal: data.signalData, from: data.from, name: data.name })
 	})
 
+	socket.on('send-changes', (delta, userId) => {
+		// console.log(userId)
+		io.to(userId).emit('recieve-changes', delta);
+	  });
+	
+	  socket.on('send-message', (data) => {
+		  console.log(data)
+		io.to(data.userToSend).emit('recieve-message', data.data);
+	  });
+
 	socket.on("answerCall", (data) => {
 		io.to(data.to).emit("callAccepted", data.signalData)
 	})
