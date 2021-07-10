@@ -48,10 +48,20 @@ MS-TEAMS clone aims to connect people through video calls, chat and fun activiti
  npm install
  npm node server.js
  ```
- - Navigate to UI
+ - Navigate to UI & install dependencies
  ```sh
  cd login-signup
  npm install
  npm start
  ```
- 
+ - Once setup is done, application can be found at
+ ```sh
+ http://localhost:443
+ ```
+ ## Next Steps/ Issues to work on 🎯
+ - Extend 1:1 video chat to 1:n
+ - Add features like screen sharing/recording
+ - To-do synced with firebase( the code is present in repo,just the compoenent not is not invoked)
+ - Using databse to host any assignment
+
+## Lastly, dropping a star 🌟 would be appreciated!
