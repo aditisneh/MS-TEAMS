@@ -29,10 +29,10 @@ MS-TEAMS clone aims to connect people through video calls, chat and fun activiti
     - Chat engine
  
 - ### Designing Tool
-    - Figma❤️ Check my deisgn [here](https://www.figma.com/file/1FPlFqka2jccQaByiQb9qi/MSTEAMS?node-id=68%3A0)
+    - Figma❤️ Check my design [here](https://www.figma.com/file/1FPlFqka2jccQaByiQb9qi/MSTEAMS?node-id=68%3A0)
    
  ## What it looks like? App Demo 🔥
- <p align="center"><img src="https://github.com/aditisneh/MS-TEAMS/blob/master/Readme-Assests/demo1.gif"></p>
+ <p align="center"><img src="https://github.com/aditisneh/MS-TEAMS/blob/master/Readme-Assests/demo.gif"></p>
  
  ## Want to do it on your own? Local Installation 💥
  
