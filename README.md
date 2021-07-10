@@ -35,6 +35,10 @@ MS-TEAMS clone aims to connect people through video calls, chat and fun activiti
  <p align="center"><img src="https://github.com/aditisneh/MS-TEAMS/blob/master/Readme-Assests/demo.gif"></p><br>
  <br><p align="center"><img src="https://github.com/aditisneh/MS-TEAMS/blob/master/Readme-Assests/videochat-demo.gif"></p>
  
+ ## Want to use? Deployment 👀
+✨ Check the website [here](https://ms-teams.netlify.app/) and 
+  Backend [here](https://server-ms-teams.herokuapp.com/) ✨
+
  ## Want to do it on your own? Local Installation 💥
  
  #### The clone requires [Node.js](https://nodejs.org/) to run. 
@@ -58,7 +62,8 @@ MS-TEAMS clone aims to connect people through video calls, chat and fun activiti
  ```sh
  http://localhost:443
  ```
- ## Next Steps/ Issues to work on 🎯
+   
+ ## Next Steps / Issues to work on 🎯
  - Extend 1:1 video chat to 1:n
  - Add features like screen sharing/recording
  - To-do synced with firebase( the code is present in repo,just the compoenent not is not invoked)
