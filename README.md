@@ -66,7 +66,7 @@ MS-TEAMS clone aims to connect people through video calls, chat and fun activiti
  ## Next Steps / Issues to work on 🎯
  - Extend 1:1 video chat to 1:n
  - Add features like screen sharing/recording
- - To-do synced with firebase( the code is present in repo,just the compoenent not is not invoked)
+ - To-do synced with firebase( the code is present in repo,just the component not is not invoked)
  - Using databse to host any assignment
 
 ## Lastly, dropping a star 🌟 would be appreciated!
